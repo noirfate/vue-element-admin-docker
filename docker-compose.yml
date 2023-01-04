@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  web:
+    image: noirfate/vue-element-admin:1.0
+    ports:
+      - "9000:9527"
+    tty: true
+    environment:
+      - NODE_OPTIONS=--openssl-legacy-provider
